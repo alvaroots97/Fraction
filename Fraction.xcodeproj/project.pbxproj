@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		8220A4602510480700E7FD9C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8220A45F2510480700E7FD9C /* main.m */; };
+		8220A4682510483800E7FD9C /* Fraction.m in Sources */ = {isa = PBXBuildFile; fileRef = 8220A4672510483800E7FD9C /* Fraction.m */; };
+		8220A46B251048E500E7FD9C /* Calculator.m in Sources */ = {isa = PBXBuildFile; fileRef = 8220A46A251048E500E7FD9C /* Calculator.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +27,10 @@
 /* Begin PBXFileReference section */
 		8220A45C2510480700E7FD9C /* Fraction */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Fraction; sourceTree = BUILT_PRODUCTS_DIR; };
 		8220A45F2510480700E7FD9C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		8220A4662510483800E7FD9C /* Fraction.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Fraction.h; sourceTree = "<group>"; };
+		8220A4672510483800E7FD9C /* Fraction.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Fraction.m; sourceTree = "<group>"; };
+		8220A469251048E500E7FD9C /* Calculator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Calculator.h; sourceTree = "<group>"; };
+		8220A46A251048E500E7FD9C /* Calculator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Calculator.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +64,10 @@
 			isa = PBXGroup;
 			children = (
 				8220A45F2510480700E7FD9C /* main.m */,
+				8220A4662510483800E7FD9C /* Fraction.h */,
+				8220A4672510483800E7FD9C /* Fraction.m */,
+				8220A469251048E500E7FD9C /* Calculator.h */,
+				8220A46A251048E500E7FD9C /* Calculator.m */,
 			);
 			path = Fraction;
 			sourceTree = "<group>";
@@ -119,7 +129,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8220A46B251048E500E7FD9C /* Calculator.m in Sources */,
 				8220A4602510480700E7FD9C /* main.m in Sources */,
+				8220A4682510483800E7FD9C /* Fraction.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
