@@ -9,26 +9,34 @@
 #import "Calculator.h"
 
 @implementation Calculator
-
+{
+    double accumulator;
+}
+-(void) setAccumulator:(double)value {
+    accumulator = value;
+}
 -(void) clear{
-    _accumulator = 0;
+    accumulator = 0;
+}
+-(double) accumulator {
+    return accumulator;
 }
 -(void)add: (double) value {
-    _accumulator += value;
+    accumulator += value;
 }
 -(void)substract:(double)value {
-    _accumulator -= value;
+    accumulator -= value;
 }
 -(void)multiply:(double)value {
-    _accumulator *= value;
+    accumulator *= value;
 }
 -(void)divide:(double)value {
     if(value != 0.0){
-        _accumulator /= value;
+        accumulator /= value;
     }
     else{
         NSLog(@"Division by zero.");
-        _accumulator = NAN;
+        accumulator = NAN;
     }
 }
 @end
