@@ -9,11 +9,13 @@
 #import <Foundation/Foundation.h>
 #import "Fraction.h"
 #import "Calculator.h"
+#import "Complex.h"
 
 //void menu(void);
 //void getInput (void);
 //void calculate(double value1, char operator, double value2);
 //void result(Calculator *calculator, double value1, char operator, double value2);
+void printObject(id obj);
 void testPrimitives(void);
 void arithmeticOperators(void);
 void integerArithmetic(void);
@@ -23,6 +25,16 @@ void testCalculator(void);
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
         NSLog(@"Developer Alvaro Alva");
+        Fraction *a, *b, *c, *d;
+        a = [[Fraction alloc]initWith:1 over:3];
+        b = [[Fraction alloc]initWith:3 over:7];
+        c = [[Fraction alloc]initWith:2 over:3];
+        d = [[Fraction alloc]init];
+        [a print];
+        [b print];
+        [c print];
+        [d print];
+        /*
         int numerator, denominator;
         Fraction *myFraction;
         Fraction *yourFraction;
@@ -46,7 +58,7 @@ int main(int argc, const char * argv[]) {
         [myFraction print];
         [yourFraction print];
         [result print];
-        /*
+        
         for(int i=0; i <10; i++){
             [myFraction reduce];
             [yourFraction reduce];
@@ -56,9 +68,39 @@ int main(int argc, const char * argv[]) {
         //arithmeticOperators();
         //integerArithmetic();
         //implicitConversion();
-        testCalculator();
+        //testCalculator();
+        /*
+        Fraction *f1 = [[Fraction alloc]init];
+        Complex *c1 = [[Complex alloc]init];
+        Calculator *cal = [[Calculator alloc]init];
+        [f1 setTo:2 over:5];
+        [c1 setReal: 10.0 andImaginary:2.5];
+        [cal setAccumulator: 5];
+        
+        printObject(f1);
+        printObject(c1);
+        printObject(cal);
+        */
+        //dataValue = f1;
+        //[dataValue print];
+        //dataValue = c1;
+        //[dataValue print];
     }
     return 0;
+}
+void printObject(id obj) {
+    //if ([obj respondsToSelector:@selector(print)]){
+    //    [obj print];
+    //} else {
+    //    NSLog(@"Object does not have a print method");
+    //}
+    @try {
+        [obj print];
+    } @catch (NSException *exception) {
+        NSLog(@"Object does not have a print method");
+    } @finally {
+        NSLog(@"This always run papa");
+    }
 }
 void testPrimitives(void) {
     int integerVar = 100;

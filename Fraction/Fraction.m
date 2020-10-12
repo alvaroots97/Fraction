@@ -82,4 +82,14 @@
     NSLog(@"hitCount = %i", hitCount);
      */
 }
+-(instancetype)init {
+    return [self initWith:1 over:1];
+}
+-(instancetype)initWith: (int) n over: (int) d {
+    self = [super init];
+    if (self) {
+        [self setTo:n over:d];
+    }
+    return self;
+}
 @end

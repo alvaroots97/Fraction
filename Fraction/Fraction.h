@@ -26,6 +26,7 @@ NS_ASSUME_NONNULL_BEGIN
 // divide argument from receiver
 -(Fraction *) divide: (Fraction *) f;
 -(void) reduce;
+-(instancetype) initWith: (int) n over: (int) d;
 @end
 
 NS_ASSUME_NONNULL_END
