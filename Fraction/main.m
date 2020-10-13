@@ -10,6 +10,7 @@
 #import "Fraction.h"
 #import "Calculator.h"
 #import "Complex.h"
+#import "Fraction+MathOps.h"
 
 //void menu(void);
 //void getInput (void);
@@ -25,6 +26,45 @@ void testCalculator(void);
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
         NSLog(@"Developer Alvaro Alva");
+        Fraction *a = [[Fraction alloc]init];
+        Fraction *b = [[Fraction alloc]init];
+        Fraction *result;
+        [a setTo:1 over:3];
+        [b setTo:2 over:5];
+        
+        [a print];
+        NSLog(@" +");
+        [b print];
+        NSLog(@"-----");
+        result = [a add: b];
+        [result print];
+        NSLog(@"\n");
+        
+        [a print];
+        NSLog(@" -");
+        [b print];
+        NSLog(@"-----");
+        result = [a substract: b];
+        [result print];
+        NSLog(@"\n");
+        
+        [a print];
+        NSLog(@" *");
+        [b print];
+        NSLog(@"-----");
+        result = [a multiply: b];
+        [result print];
+        NSLog(@"\n");
+        
+        [a print];
+        NSLog(@" /");
+        [b print];
+        NSLog(@"-----");
+        result = [a divide: b];
+        [result print];
+        NSLog(@"\n");
+        
+        /*
         Fraction *a, *b, *c, *d;
         a = [[Fraction alloc]initWith:1 over:3];
         b = [[Fraction alloc]initWith:3 over:7];
@@ -34,6 +74,7 @@ int main(int argc, const char * argv[]) {
         [b print];
         [c print];
         [d print];
+         */
         /*
         int numerator, denominator;
         Fraction *myFraction;

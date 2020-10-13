@@ -10,6 +10,7 @@
 		8220A4602510480700E7FD9C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8220A45F2510480700E7FD9C /* main.m */; };
 		8220A4682510483800E7FD9C /* Fraction.m in Sources */ = {isa = PBXBuildFile; fileRef = 8220A4672510483800E7FD9C /* Fraction.m */; };
 		8220A46B251048E500E7FD9C /* Calculator.m in Sources */ = {isa = PBXBuildFile; fileRef = 8220A46A251048E500E7FD9C /* Calculator.m */; };
+		823F722F253513FA00FB032D /* Fraction+MathOps.m in Sources */ = {isa = PBXBuildFile; fileRef = 823F722E253513FA00FB032D /* Fraction+MathOps.m */; };
 		827B4E532522A10C00A604AF /* Complex.m in Sources */ = {isa = PBXBuildFile; fileRef = 827B4E522522A10C00A604AF /* Complex.m */; };
 /* End PBXBuildFile section */
 
@@ -32,6 +33,8 @@
 		8220A4672510483800E7FD9C /* Fraction.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Fraction.m; sourceTree = "<group>"; };
 		8220A469251048E500E7FD9C /* Calculator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Calculator.h; sourceTree = "<group>"; };
 		8220A46A251048E500E7FD9C /* Calculator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Calculator.m; sourceTree = "<group>"; };
+		823F722D253513FA00FB032D /* Fraction+MathOps.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Fraction+MathOps.h"; sourceTree = "<group>"; };
+		823F722E253513FA00FB032D /* Fraction+MathOps.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "Fraction+MathOps.m"; sourceTree = "<group>"; };
 		827B4E512522A10C00A604AF /* Complex.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Complex.h; sourceTree = "<group>"; };
 		827B4E522522A10C00A604AF /* Complex.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Complex.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -73,6 +76,8 @@
 				8220A46A251048E500E7FD9C /* Calculator.m */,
 				827B4E512522A10C00A604AF /* Complex.h */,
 				827B4E522522A10C00A604AF /* Complex.m */,
+				823F722D253513FA00FB032D /* Fraction+MathOps.h */,
+				823F722E253513FA00FB032D /* Fraction+MathOps.m */,
 			);
 			path = Fraction;
 			sourceTree = "<group>";
@@ -138,6 +143,7 @@
 				8220A46B251048E500E7FD9C /* Calculator.m in Sources */,
 				8220A4602510480700E7FD9C /* main.m in Sources */,
 				8220A4682510483800E7FD9C /* Fraction.m in Sources */,
+				823F722F253513FA00FB032D /* Fraction+MathOps.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
